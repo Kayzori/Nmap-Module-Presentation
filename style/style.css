@@ -1,0 +1,226 @@
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #6aff00;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #161621;
+}
+
+html::-webkit-scrollbar-corner {
+  background: #161621;
+}
+
+body {
+  font-family: "Geist", sans-serif;
+  background-color: #161621;
+}
+
+.container-center {
+  padding: 25px;
+  align-self: center;
+}
+
+.container-h {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.container-v {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.container-zigzag-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.container-hflow {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.card-text-icon {
+  display: block;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 0.7;
+}
+
+.card-text {
+  flex-shrink: 0;
+  border: 1px solid #6aff00;
+  padding: 20px;
+  max-width: 50%;
+  background: #161621;
+  color: #6aff00;
+  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+.card-text li {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.card-text:hover {
+  background: #6aff00;
+  color: #161621;
+}
+
+.card-image-circle {
+  min-width: 25hv;
+  max-width: 50hv;
+  min-height: 25hv;
+  max-height: 50hv;
+  aspect-ratio: 1/1;
+  border: 1px solid #6aff00;
+  background: #161621;
+  border-radius: 50%;
+  transition: color 0.1;
+}
+
+.card-image-square {
+  min-width: 500px;
+  min-height: 500px;
+  aspect-ratio: 1/1;
+  border: 1px solid #6aff00;
+  background: #161621;
+  transition: color 0.1;
+}
+
+.card-image-rect {
+  max-width: auto;
+  max-height: 500px;
+  aspect-ratio: auto;
+  border: 1px solid #6aff00;
+  background: #161621;
+  transition: color 0.1;
+}
+
+.button {
+  border: 1px solid #6aff00;
+  background: #161621;
+  color: #6aff00;
+  padding: 15px;
+  font-size: 20px;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #6aff00;
+  color: #161621;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #161621;
+  border-right: 2px solid #6aff00;
+  transition: width 0.2s ease;
+}
+
+.sidebar h2 {
+  font-size: 35px;
+}
+
+.sidebar-text {
+  color: #6aff00;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-nav-link {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-nav-link:hover {
+  color: #161621;
+  background: #6aff00;
+}
+
+.sidebar-nav-link.active {
+  color: #161621;
+  background: #6aff00;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.header {
+  margin: 0;
+}
+
+.text {
+  color: #6aff00;
+}
+
+.main {
+  margin-left: 15%;
+  padding: 30px;
+  min-height: 100vh;
+  color: #161621;
+}
+
+/*# sourceMappingURL=style.css.map */

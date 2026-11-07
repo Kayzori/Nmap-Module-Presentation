@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+.container-center {
+  padding: 25px;
+  align-self: center;
+}
+
+.container-h {
+  padding: 25px;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.container-v {
+  padding: 25px;
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.container-zigzag-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.container-hflow {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}

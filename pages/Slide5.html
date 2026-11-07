@@ -1,0 +1,42 @@
+<div>
+  <div class="container-center">
+    <h2 class="text" style="font-size: 75px; margin: 0;">Nmap &lt;/&gt;</h2>
+    <h1 class="text" style="font-size: 125px; text-align: center;">Nmap Under the Hood</h1>
+  </div>
+  <div class="container-v">
+    <div class="container-zigzag-item card-text">
+      <span class="card-text-icon">&rdquo;</span>
+      <p>
+        Normally, programs connect to other computers using the
+        functions the operating system gives them. Nmap is special
+        because it often builds its own network messages (called packets)
+        from scratch, which gives it more control. This is why some scans
+        need administrator rights (root).
+      </p>
+    </div>
+    <div class="container-zigzag-item card-text">
+      <span class="card-text-icon">&rdquo;</span>
+      <p>
+        Nmap can do multiple different scans to check port's state, TCP scans are so common:
+        <ul>
+          <li>TCP SYN Scan</li>
+          <li>TCP connect Scan</li>
+          <li>TCP ACK Scan</li>
+          <li>TCP Window Scan</li>
+        </ul>
+      </p>
+    </div>
+    <div class="container-zigzag-item card-text">
+      <span class="card-text-icon">&rdquo;</span>
+      <p>
+        The most common scan is called the SYN scan. Connecting to
+        a service normally takes three steps, called the “handshake”.
+        Nmap does only the first step: it sends a request, sees the
+        reply, and then stops before the connection is fully made.
+        That is fast and leaves fewer traces.
+      </p>
+    </div>
+  </div>
+    
+  </div>
+</div>

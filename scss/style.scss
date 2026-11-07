@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+@import 'html';
+
+body {
+  font-family: $font;
+  background-color: $dark-color;
+}
+
+@import 'components/container';
+@import 'components/card';
+@import 'components/control';
+
+@import 'sidebar';
+
+.header {
+  margin: 0;
+}
+
+.text {
+  color: $bright-color;
+}
+
+.main {
+  margin-left: 15%;
+  padding: 30px;
+  min-height: 100vh;
+  color: $dark-color;
+}

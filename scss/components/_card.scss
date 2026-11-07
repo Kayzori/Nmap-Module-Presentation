@@ -1,0 +1,72 @@
+@use '../variables' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.card-text-icon {
+  display: block;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 0.7;
+}
+
+.card-text {
+  flex-shrink: 0;
+  border: 1px solid $bright-color;
+  padding: 20px;
+  max-width: 50%;
+  background: $dark-color;
+  color: $bright-color;
+  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.7;
+}
+
+.card-text li {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.card-text:hover {
+  background: $bright-color;
+  color: $dark-color;
+}
+
+.card-image-circle {
+  min-width: 25hv;
+  max-width: 50hv;
+  min-height: 25hv;
+  max-height: 50hv;
+  aspect-ratio: 1/1;
+  border: 1px solid $bright-color;
+  background: $dark-color;
+  border-radius: 50%;
+  transition: color 0.1;
+}
+
+.card-image-square {
+  min-width: 500px;
+  min-height: 500px;
+  aspect-ratio: 1/1;
+  border: 1px solid $bright-color;
+  background: $dark-color;
+  transition: color 0.1;
+}
+
+.card-image-rect {
+  max-width: auto;
+  max-height: 500px;
+  aspect-ratio: auto;
+  border: 1px solid $bright-color;
+  background: $dark-color;
+  transition: color 0.1;
+}

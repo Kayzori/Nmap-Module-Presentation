@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: $bright-color;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $dark-color;
+}
+
+html::-webkit-scrollbar-corner {
+  background: $dark-color;
+}
